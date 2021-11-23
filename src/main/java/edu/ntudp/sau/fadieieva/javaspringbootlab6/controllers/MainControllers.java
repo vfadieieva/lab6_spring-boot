@@ -13,6 +13,7 @@ public class MainControllers {
     }
     @GetMapping("/")
     public String init(Model model) {
+        model.addAttribute("color", "cool white, warm white, blue, purple, multicolor");
         return "main";
     }
 }
